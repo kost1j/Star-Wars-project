@@ -1,0 +1,17 @@
+<div class="middle__inner-wrapper">
+	<div class="middle__head-wrapper">
+		<h3 class="middle-banner middle-banner_style_underline">Heroes of the Star-Wars Universe</h3>
+	</div>
+	
+			<ul class="cart-list">
+				<li class="cart" 
+					ng-repeat="people in store.peoples | addIngrFilter:store.gender"
+					ng-class="store.chengeColorCart(people.gender)">
+
+					<img ng-src="img/people/{{people.name}}.jpg" alt="{{people.name}}" class ="cart__picture">
+					<a href class ="cart__name" ng-click = "store.activePage('people-page', people)">
+						<p>{{people.name}}</p>
+					</a>
+				</li>
+			</ul>
+</div>

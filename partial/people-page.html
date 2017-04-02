@@ -1,0 +1,63 @@
+<div class="middle-wrapper">
+	<div class="middle__head-wrapper">
+		<h3 class="middle-banner middle-banner_style_underline">{{store.pageData.name}}</h3>
+	</div>
+	<div class="middle__content-wrapper">
+		<div class= "up-discription">
+			<img class="up-discription__picture" ng-src="img/people/{{store.pageData.name}}.jpg" alt="{{store.pageData.name}}">
+			<ul class="up-discription__list">
+				<li class="up-discription__text"><span class="up-discription__topic"><u>Height</u>: </span>{{store.pageData.height}}</li>
+				<li class="up-discription__text"><span class="up-discription__topic"><u>Mass</u>: </span>{{store.pageData.mass}}</li>
+				<li class="up-discription__text"><span class="up-discription__topic"><u>Hair color</u>: </span>{{store.pageData.hair_color}}</li>
+				<li class="up-discription__text"><span class="up-discription__topic"><u>Skin color</u>: </span>{{store.pageData.skin_color}}</li>
+				<li class="up-discription__text"><span class="up-discription__topic"><u>Eye color</u>: </span>{{store.pageData.eye_color}}</li>
+				<li class="up-discription__text"><span class="up-discription__topic"><u>Birth year</u>: </span>{{store.pageData.birth_year}}</li>
+				<li class="up-discription__text"><span class="up-discription__topic"><u>Gender</u>: </span>{{store.pageData.gender}}</li>
+			</ul>
+		</div>
+		
+			<br>
+			<br>
+			<br>
+			<ul class="nav nav-tabs">
+	 			<li ng-class="store.activeNavClass(1)" >
+	 				<a href="#" ng-click="store.activeNavItem(1)">Homeworld</a>
+	 			</li>
+	       		<li ng-class="store.activeNavClass(2)">
+	       			<a href="#" ng-click="store.activeNavItem(2)">Species</a>
+	       		</li>
+	 			<li ng-class="store.activeNavClass(3)">
+	 				<a href="#" ng-click="store.activeNavItem(3)">Films</a>
+	 			</li>
+	 			<li ng-class="store.activeNavClass(4)">
+	 				<a href="#" ng-click="store.activeNavItem(4)">Vehicles</a>
+	 			</li>
+	       		<li ng-class="store.activeNavClass(5)">
+	       			<a href="#" ng-click="store.activeNavItem(5)">Starships</a>
+	       		</li>
+	       		<li ng-class="">
+	       			<a href ng-click = "store.activePage('peoples-catalog')">Back</a>
+	       		</li>
+			</ul></br></br>
+
+			<div ng-show="store.showNavItem(1)">
+				<people-home> </people-home>
+			</div>
+			<div ng-show="store.showNavItem(2)">
+				<people-species></people-species>
+			</div>
+			<div ng-show="store.showNavItem(3)">
+				<people-films></people-films>
+		    </div>
+			<div ng-show="store.showNavItem(4)">
+				<people-vehicles></people-vehicles>
+			</div>
+			<div ng-show="store.showNavItem(5)">
+				<people-starships></people-starships>
+			</div>
+			<br><br>
+			
+
+	</div>
+
+</div>

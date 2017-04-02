@@ -1,0 +1,16 @@
+<table class="tftable" border="1">
+	<tr>
+		<th>Title</th>
+		<th>Episode id</th>
+		<th>Release date</th>
+		<th>Director</th>
+		<th>Producer</th>
+	</tr>
+	<tr ng-repeat="disc in store.downDiscriptionList | filter:{nameClassData:'films'}">
+		<td>{{disc.title}}</td>
+		<td>{{disc.episode_id}}</td>
+		<td>{{disc.release_date}}</td>
+		<td>{{disc.director}}</td>
+		<td>{{disc.producer}}</td>
+	</tr>
+</table>

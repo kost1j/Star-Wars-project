@@ -1,0 +1,24 @@
+<table class="tftable" border="1">
+	<tr>
+		<th>Starships name</th>
+		<th>Model</th>
+		<th>Starship class</th>
+		<th>Passengers</th>
+		<th>Crew</th>
+		<th>Hyperdrive rating</th>
+		<th>Length</th>
+		<th>Cargo capacity</th>
+		<th>Cost in credits</th>
+	</tr>
+	<tr ng-repeat="disc in store.downDiscriptionList | filter:{nameClassData:'starships'}">
+		<td>{{disc.name}}</td>
+		<td>{{disc.model}}</td>
+		<td>{{disc.starship_class}}</td>
+		<td>{{disc.passengers}}</td>
+		<td>{{disc.crew}}</td>
+		<td>{{disc.hyperdrive_rating}}</td>
+		<td>{{disc.length}}</td>
+		<td>{{disc.cargo_capacity}}</td>
+		<td>{{disc.cost_in_credits}}</td>
+	</tr>
+</table>

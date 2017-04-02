@@ -1,0 +1,22 @@
+<table class="tftable" border="1">
+	<tr>
+		<th>Vehicles name</th>
+		<th>Model</th>
+		<th>Max atmosphering speed</th>
+		<th>Vehicle class</th>
+		<th>Length</th>
+		<th>Crew</th>
+		<th>Cargo capacity</th>
+		<th>Cost in credits</th>
+	</tr>
+	<tr ng-repeat="disc in store.downDiscriptionList | filter:{nameClassData:'vehicles'}">
+		<td>{{disc.name}}</td>
+		<td>{{disc.model}}</td>
+		<td>{{disc.max_atmosphering_speed}}</td>
+		<td>{{disc.vehicle_class}}</td>
+		<td>{{disc.length}}</td>
+		<td>{{disc.crew}}</td>
+		<td>{{disc.cargo_capacity}}</td>
+		<td>{{disc.cost_in_credits}}</td>
+	</tr>
+</table>
